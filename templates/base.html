@@ -8,7 +8,7 @@
 
     </head>
     <body>
-        <h1>Outside!</h1>
+        <h1>Task Manager</h1>
         {% block content %}
 
         {% endblock %}
@@ -16,6 +16,17 @@
         <script type="text/javascript">
             $(document).ready(function(){
                 $('.collapsible').collapsible();
+                $('select').material_select();
+            });
+            
+            $(".datepicker").pickadate({
+                selectMonths: true,
+                selectYears: 15,
+                today: "Today",
+                clear: "Clear",
+                close: "Ok",
+                closeOnSelect: false
+
             });
         </script>
     </body>
