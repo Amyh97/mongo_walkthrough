@@ -7,8 +7,8 @@
     <li>
       <div class="collapsible-header">
         
-            <a href="" class="waves-effect waves-light btn btn_small">Del</a>
-            <a href="{{url_for('edit_category', category_id = category._id)}}" class="waves-effect waves-light btn btn_small blue">Edit</a>
+            <a href="{{url_for('delete_category', category_id=category._id)}}" class="waves-effect waves-light btn btn_small">Del</a>
+            <a href="{{url_for('edit_category', category_id=category._id)}}" class="waves-effect waves-light btn btn_small blue">Edit</a>
         <div class=" task_header col s9">
              <p><strong> {{category.category_name}} </strong></p>
         </div>
@@ -16,6 +16,8 @@
     </li>
    {% endfor %}
   </ul>
-
+<div class="row">
+    <a href="{{url_for('new_category')}}" class="waves-effect waves-light btn"><i class="material-icons right">playlist_add</i>Add Category</a>
+</div>
 </div>
 {% endblock %}
