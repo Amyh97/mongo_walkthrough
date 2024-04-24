@@ -1,3 +1,4 @@
+# This project is a walkthrough from Code Institute for learning purposes
 <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
 
 Welcome Amyh97,
